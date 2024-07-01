@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+    <div class="box">
+        <div class="album"><img src="./assets/img/Arijit Singh.jpg" id="Album"></div>
+        <div class="text1">Lorem ipsum dolor sit amet.</div>
+        <div class="text2">Full lyrics Icon !
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+
+        <div class="song" id="musicName">Arijit-Singh-Mashup</div>
+        <div id="artist">Arijit Singh</div>
+
+        <!--------------- RANGE-SLIDER --------------->
+
+        <input type="range" id="range" value="0">
+        <div class="timer">
+            <div id="start">0:00</div>
+            <div id="end">4:00</div>
+        </div>
+
+        <!-------------- PLAYER-ICON -------------->
+
+        <div class="player_icon">
+            <div class="favorite">
+                <i class="fa-solid fa-heart" id="heart" onclick="heart()"></i>
+            </div>
+            <div class="play_pause">
+                <i class="fa-solid fa-backward-step" id="previousBtn"></i>
+                <i class="fa-solid fa-play" id="playBtn"></i>
+                <i class="fa-solid fa-forward-step" id="nextBtn"></i>
+            </div>
+            <div class="music">
+                <i class="fa-solid fa-music"></i>
+            </div>
+        </div>
+
+        <!--------------------- FEEDBACK --------------------->
+
+        <div class="feedback">
+            <div class="cd">
+                <i class="fa-solid fa-compact-disc"></i>
+            </div>
+            <div class="like_unlike">
+                <i class="fa-solid fa-thumbs-up" style="color: grey;" id="likeBtn" onclick="Like()"></i></i>
+                <i class="fa-solid fa-thumbs-up" style="color: grey;" id="disLikeBtn" onclick="disLike()"></i></i>
+            </div>
+        </div>
+
+    </div>
+    <audio src="./assets/mp3/Arijit.mp3" id="audioPlayer"></audio>
+
+</body>
+
+<script src="./app.js" ></script>
+
+</html>
